@@ -1,0 +1,4 @@
+github "Anviking/Decodable" "master"
+github "jordanekay/Cache" "swift3"
+github "ReactKit/SwiftTask" "swift/3.0"
+github "jordanekay/SwiftKeychainWrapper" "develop"

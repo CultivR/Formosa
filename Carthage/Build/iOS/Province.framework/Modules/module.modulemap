@@ -1,0 +1,10 @@
+framework module Province {
+  umbrella header "Province.h"
+
+  export *
+  module * { export * }
+}
+
+module Province.Swift {
+    header "Province-Swift.h"
+}

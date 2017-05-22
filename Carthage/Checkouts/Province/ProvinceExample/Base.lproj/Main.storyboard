@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="RBz-Zr-2aW">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="1im-Y1-heq">
+            <objects>
+                <navigationController id="RBz-Zr-2aW" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="QjA-h6-sJi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Bc9-X7-eup" kind="relationship" relationship="rootViewController" id="oLP-Yp-ynb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k1t-q0-oda" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-403" y="-32"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="jyp-2y-NIm">
+            <objects>
+                <viewController id="Bc9-X7-eup" userLabel="View Controller" customClass="ExampleViewController" customModule="ProvinceExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dxi-BQ-SUF"/>
+                        <viewControllerLayoutGuide type="bottom" id="Waa-gy-neg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2ci-1U-YME">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Quotes" id="kHB-ip-iYA">
+                        <leftBarButtonItems>
+                            <barButtonItem systemItem="rewind" id="QaU-Ix-x1m">
+                                <connections>
+                                    <action selector="decrementQuoteCount" destination="Bc9-X7-eup" id="yLF-Na-Ad3"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="fastForward" id="Uff-fz-Qzq">
+                                <connections>
+                                    <action selector="incrementQuoteCount" destination="Bc9-X7-eup" id="dde-YX-P4h"/>
+                                </connections>
+                            </barButtonItem>
+                        </leftBarButtonItems>
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="refresh" id="WUF-dd-PkE">
+                                <connections>
+                                    <action selector="reloadQuotes" destination="Bc9-X7-eup" id="YLw-GA-9vm"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="⚪️" id="6uN-T3-pRG">
+                                <connections>
+                                    <action selector="toggleDisplayStyle" destination="Bc9-X7-eup" id="2Su-XX-N9r"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="displayItem" destination="6uN-T3-pRG" id="dNP-j4-psH"/>
+                        <outlet property="lessItem" destination="QaU-Ix-x1m" id="Ese-td-Eea"/>
+                        <outlet property="moreItem" destination="Uff-fz-Qzq" id="Vzj-eL-C2M"/>
+                        <outlet property="reloadItem" destination="WUF-dd-PkE" id="5b9-O8-AhC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LAt-bp-Aho" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="332" y="-33"/>
+        </scene>
+    </scenes>
+</document>
