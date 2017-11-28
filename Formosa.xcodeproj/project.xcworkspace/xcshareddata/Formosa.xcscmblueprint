@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "D1A20F7D60F073213F9AD5A3E99188D4DF9486E7",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "D1A20F7D60F073213F9AD5A3E99188D4DF9486E7" : 9223372036854775807,
+    "17BD72C0C64D492FAC58C570C1AAA601FC0F8819" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "A71CB06D-44EB-4B8C-BF87-61EECAF8C2A4",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "D1A20F7D60F073213F9AD5A3E99188D4DF9486E7" : "Formosa\/",
+    "17BD72C0C64D492FAC58C570C1AAA601FC0F8819" : "Formosa\/Submodules\/Mensa\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Formosa",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Formosa.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:\/jordanekay\/Mensa.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "17BD72C0C64D492FAC58C570C1AAA601FC0F8819"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jordanekay\/Formosa.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D1A20F7D60F073213F9AD5A3E99188D4DF9486E7"
+    }
+  ]
+}

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13178.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="OIq-Z3-hos">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13156.2"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="QFQ-Pc-L8d">
+            <objects>
+                <navigationController id="OIq-Z3-hos" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Nr8-7F-ols">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="wlT-gq-cz1" kind="relationship" relationship="rootViewController" id="3XW-wv-PpO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mJv-yu-KTb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-546" y="70"/>
+        </scene>
+        <!--Authentica-->
+        <scene sceneID="D1j-W6-pWT">
+            <objects>
+                <viewController id="wlT-gq-cz1" customClass="ExampleViewController" customModule="FormosaExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pjG-rt-Z1a"/>
+                        <viewControllerLayoutGuide type="bottom" id="NKk-gJ-PJx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Hg3-ea-MA2" customClass="ExampleView" customModule="FormosaExample" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🔴 Logged out" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GDJ-pS-2CN">
+                                <rect key="frame" x="16" y="314" width="343" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GDJ-pS-2CN" firstAttribute="centerY" secondItem="Hg3-ea-MA2" secondAttribute="centerY" id="EWq-0a-vdo"/>
+                            <constraint firstAttribute="trailing" secondItem="GDJ-pS-2CN" secondAttribute="trailing" constant="16" id="GE0-c7-VwX"/>
+                            <constraint firstItem="GDJ-pS-2CN" firstAttribute="leading" secondItem="Hg3-ea-MA2" secondAttribute="leading" constant="16" id="Hyy-S5-1bL"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="label" destination="GDJ-pS-2CN" id="ags-p8-3b4"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" title="Authentica" id="jad-zX-WgM">
+                        <barButtonItem key="leftBarButtonItem" title="Sign Up" id="BsP-wl-T8G" userLabel="Sign Up Item">
+                            <connections>
+                                <action selector="signUp" destination="wlT-gq-cz1" id="bZl-Zz-mZZ"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Log In" id="MEZ-0C-AQf" userLabel="Log In or Out Item">
+                            <connections>
+                                <action selector="logInOrOut" destination="wlT-gq-cz1" id="Osh-WV-l0e"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="logInOrOutItem" destination="MEZ-0C-AQf" id="gPZ-Od-EO2"/>
+                        <outlet property="signUpItem" destination="BsP-wl-T8G" id="h5u-lN-7Gr"/>
+                        <segue destination="c9R-PT-qN4" kind="presentation" identifier="SignUp" id="Bl0-xa-i7v"/>
+                        <segue destination="gLT-N6-VLQ" kind="presentation" identifier="LogIn" id="WR5-wV-4fZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EWV-RX-BAb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="157.59999999999999" y="69.715142428785612"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="GoF-cT-7wG">
+            <objects>
+                <navigationController id="c9R-PT-qN4" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6MX-pv-LKU">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ZaY-D8-YqH" kind="relationship" relationship="rootViewController" id="CFf-52-M1y"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aCY-Sq-mXZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="983" y="-260"/>
+        </scene>
+        <!--Sign Up-->
+        <scene sceneID="649-NA-8a0">
+            <objects>
+                <viewController id="ZaY-D8-YqH" customClass="SignUpViewController" customModule="FormosaExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Jpx-kK-JEt"/>
+                        <viewControllerLayoutGuide type="bottom" id="vdz-kO-QmH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rxT-Fq-As5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Sign Up" id="bqf-O2-hVT">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="ajs-5e-p69">
+                            <connections>
+                                <action selector="dismiss" destination="RUu-xi-ROO" id="cBI-ij-0kf"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RUu-xi-ROO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1684" y="-260"/>
+        </scene>
+        <!--Log In-->
+        <scene sceneID="mJa-iG-1Up">
+            <objects>
+                <viewController id="U3M-6l-6Fv" customClass="LogInViewController" customModule="FormosaExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zYb-dn-BHz"/>
+                        <viewControllerLayoutGuide type="bottom" id="ryf-RM-jWI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4lN-IE-6gh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Log In" id="B40-XY-6wS">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="qDC-38-G2A">
+                            <connections>
+                                <action selector="dismiss" destination="quK-yl-E4X" id="swm-EP-wz2"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="quK-yl-E4X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1684" y="448"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7rD-V8-asN">
+            <objects>
+                <navigationController id="gLT-N6-VLQ" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="O3N-89-m03">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="U3M-6l-6Fv" kind="relationship" relationship="rootViewController" id="9gH-rQ-BWZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OGe-ri-dnc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="982" y="448"/>
+        </scene>
+    </scenes>
+</document>
