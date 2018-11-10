@@ -6,7 +6,7 @@
 //  Copyright © 2017 Cultivr. All rights reserved.
 //
 
-public class FormViewControllerState<Delegate: FormViewControllerStateDelegate>: StateHolder {
+public class FormViewControllerState<Delegate: FormViewControllerStateDelegate>: StateHolderTODO {
     public typealias FormType = Delegate.FormType
     private typealias FormSubmissionState = SubmissionState<FormType.Resource, FormValidityError<FormType>, FormType.SubmissionError>
     

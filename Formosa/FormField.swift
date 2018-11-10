@@ -55,7 +55,7 @@ public extension FormField {
     
     func isValid(forInput input: String) -> Bool {
         if let regex = validInputRegex {
-            return input.range(of: regex, options: .regularExpression) != nil
+            return input.range(of: "^\(regex)$", options: .regularExpression) != nil
         }
         return true
     }

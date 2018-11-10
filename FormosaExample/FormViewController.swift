@@ -11,7 +11,7 @@ import Klaxon
 import Mensa
 import Province
 
-class FormViewController<FormType: Form>: UIViewController, Stateful where FormType.SubmissionError: KlaxonError {
+class FormViewController<FormType: Form>: UIViewController, StatefulTODO where FormType.SubmissionError: KlaxonError {
     private(set) lazy var state  = FormViewControllerState<FormViewController<FormType>>(delegate: self)
     
     private var form: FormType

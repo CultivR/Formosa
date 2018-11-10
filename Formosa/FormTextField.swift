@@ -96,7 +96,7 @@ public extension FormTextField {
         guard let text = text, let stringRange = Range(range, in: text) else { return false }
         
         let updatedText = text.replacingCharacters(in: stringRange, with: string)
-        return updatedText.range(of: regex, options: .regularExpression) != nil
+        return updatedText.range(of: "^\(regex)$", options: .regularExpression) != nil
     }
 }
 

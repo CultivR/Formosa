@@ -6,7 +6,7 @@
 //  Copyright © 2018 Cultivr. All rights reserved.
 //
 
-open class FormViewController<FormType: Form & Initializable>: UIViewController, Stateful, KeyboardObserving {
+open class FormViewController<FormType: Form & Initializable>: UIViewController, StatefulTODO, KeyboardObserving {
     public private(set) var dataSource: FormType!
     
     public private(set) lazy var state = FormViewControllerState<FormViewController>(delegate: self)
