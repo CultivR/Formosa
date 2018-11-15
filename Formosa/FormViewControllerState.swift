@@ -6,7 +6,7 @@
 //  Copyright © 2017 Cultivr. All rights reserved.
 //
 
-public class FormViewControllerState<Delegate: FormViewControllerStateDelegate>: StateHolderTODO {
+public class FormViewControllerState<Delegate: FormViewControllerStateDelegate> {
     public typealias FormType = Delegate.FormType
     private typealias FormSubmissionState = SubmissionState<FormType.Resource, FormValidityError<FormType>, FormType.SubmissionError>
     
@@ -24,7 +24,7 @@ public class FormViewControllerState<Delegate: FormViewControllerStateDelegate>:
         }
     }
     
-    public required init(delegate: Delegate) {
+    public required init(source: Void, delegate: Delegate) {
         self.delegate = delegate
     }
 }
@@ -62,8 +62,10 @@ public extension FormViewControllerState {
             self?.formSubmissionState = $0
         }
     }
-    
-    func cancelFormSubmission() {
+}
+
+extension FormViewControllerState: StateHolder {
+    public func reset() {
         runningCheckValidityTask?.cancel()
         runningSubmitTask?.cancel()
     }

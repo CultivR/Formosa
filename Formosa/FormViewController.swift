@@ -6,10 +6,10 @@
 //  Copyright © 2018 Cultivr. All rights reserved.
 //
 
-open class FormViewController<FormType: Form & Initializable>: UIViewController, StatefulTODO, KeyboardObserving {
+open class FormViewController<FormType: Form & Initializable>: UIViewController, KeyboardObserving {
     public private(set) var dataSource: FormType!
     
-    public private(set) lazy var state = FormViewControllerState<FormViewController>(delegate: self)
+    private lazy var state = FormViewControllerState<FormViewController>(delegate: self)
     
     open var formDisplayContext: DataDisplayContext {
         return .tableView(separatorInset: nil, separatorPlacement: .allCells)
@@ -38,7 +38,7 @@ open class FormViewController<FormType: Form & Initializable>: UIViewController,
     }
     
     open func cancelFormSubmissionAndDismiss() {
-        state.cancelFormSubmission()
+        state.reset()
         dismiss(animated: true)
     }
     
@@ -80,6 +80,10 @@ open class FormViewController<FormType: Form & Initializable>: UIViewController,
     public func keyboardDidAnimate(notification: Notification) {
         return
     }
+}
+
+extension FormViewController: Stateful {
+    public typealias StateHolderType = FormViewControllerState<FormViewController>
 }
 
 extension FormViewController: DataDisplaying {
