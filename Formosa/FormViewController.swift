@@ -7,6 +7,8 @@
 //
 
 open class FormViewController<FormType: Form & Initializable>: UIViewController, KeyboardObserving {
+    public typealias FormSubmissionState = SubmissionState<FormType.Resource, FormValidityError<FormType>, FormType.SubmissionError>
+    
     public private(set) var dataSource: FormType!
     
     private lazy var state = FormViewControllerState<FormViewController>(delegate: self)
@@ -28,6 +30,10 @@ open class FormViewController<FormType: Form & Initializable>: UIViewController,
     }
     
     open func setup(_ actionView: FormActionView) {
+        return
+    }
+    
+    open func update(with submissionState: FormSubmissionState) {
         return
     }
     
@@ -90,10 +96,6 @@ extension FormViewController: DataDisplaying {
     public typealias Item = FormType.Item
     public typealias DataViewType = UICollectionView
     
-    public func setupDataView() {
-        view.bringSubview(toFront: dataView)
-    }
-    
     public var displayContext: DataDisplayContext {
         return formDisplayContext
     }
@@ -132,10 +134,14 @@ extension FormViewController: FormViewControllerStateDelegate {
     }
     
     public func state<T>(_ state: FormViewControllerState<T>, didUpdate formSubmissionState: SubmissionState<FormType.Resource, FormValidityError<FormType>, FormType.SubmissionError>) {
-        if case let .submitted(resource) = formSubmissionState {
+        update(with: formSubmissionState)
+        switch formSubmissionState {
+        case let .submitted(resource):
             receive(resource)
-        } else if case let .failedToSubmit(error) = formSubmissionState, FormType.isErrorReported {
+        case let .failedToSubmit(error) where FormType.isErrorReported:
             handle(error)
+        default:
+            break
         }
     }
 }

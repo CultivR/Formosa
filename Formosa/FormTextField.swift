@@ -6,10 +6,7 @@
 //  Copyright © 2017 Cultivr. All rights reserved.
 //
 
-public protocol CustomPlaceholderLabelProviding {
-    var customPlaceholderLabel: UILabel! { get }
-}
-
+// TODO: Move to Trestle
 open class FormTextField: UITextField, TouchTargetModifying {
     @IBInspectable public private(set) var topTouchOutset: CGFloat = 0
     @IBInspectable public private(set) var leftTouchOutset: CGFloat = 0
@@ -17,6 +14,7 @@ open class FormTextField: UITextField, TouchTargetModifying {
     @IBInspectable public private(set) var rightTouchOutset: CGFloat = 0
     
     @IBInspectable private(set) var textMargin: CGFloat = 0
+    @IBInspectable private(set) var kerning: CGFloat = 0
     @IBInspectable private(set) var placeholderFont: UIFont?
     @IBInspectable private(set) var placeholderColor: UIColor?
     
@@ -49,6 +47,12 @@ open class FormTextField: UITextField, TouchTargetModifying {
     }
     
     // MARK: UITextField
+    override open var text: String? {
+        didSet {
+            typingAttributes = [NSAttributedStringKey.kern.rawValue: kerning]
+        }
+    }
+
     override open var placeholder: String? {
         didSet {
             guard let string = placeholder else { return }
@@ -113,4 +117,8 @@ private extension FormTextField {
     var customPlaceholderLabel: UILabel? {
         return (self as? CustomPlaceholderLabelProviding)?.customPlaceholderLabel
     }
+}
+
+public protocol CustomPlaceholderLabelProviding {
+    var customPlaceholderLabel: UILabel! { get }
 }

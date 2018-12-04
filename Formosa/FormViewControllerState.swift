@@ -8,6 +8,7 @@
 
 public class FormViewControllerState<Delegate: FormViewControllerStateDelegate> {
     public typealias FormType = Delegate.FormType
+    
     private typealias FormSubmissionState = SubmissionState<FormType.Resource, FormValidityError<FormType>, FormType.SubmissionError>
     
     public private(set) weak var delegate: Delegate!
