@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		172261581ED3A85E002B51A5 /* Formosa.h in Headers */ = {isa = PBXBuildFile; fileRef = 172261561ED3A85E002B51A5 /* Formosa.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1730638E1F42672B00FAE2FE /* Trestle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1730638D1F42672B00FAE2FE /* Trestle.framework */; };
 		175F2B2620B235B300638B20 /* FormTextField.swift in Headers */ = {isa = PBXBuildFile; fileRef = 17FA646D1ED6457C0090F1EB /* FormTextField.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		17C016681ED3B34C00E8CB35 /* Form.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C016671ED3B34C00E8CB35 /* Form.swift */; };
 		17C0166A1ED3B37B00E8CB35 /* FormField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C016691ED3B37B00E8CB35 /* FormField.swift */; };
@@ -23,11 +22,8 @@
 		17C5E49920ED37C6003434AC /* FormActionView.swift in Headers */ = {isa = PBXBuildFile; fileRef = 17C016931ED4A9FA00E8CB35 /* FormActionView.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		17C5E49A20ED37CE003434AC /* FormFieldView.swift in Headers */ = {isa = PBXBuildFile; fileRef = 17C0166B1ED3B39700E8CB35 /* FormFieldView.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		17FA646E1ED6457C0090F1EB /* FormTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FA646D1ED6457C0090F1EB /* FormTextField.swift */; };
-		17FA64801ED768800090F1EB /* Mensa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17FA647F1ED768800090F1EB /* Mensa.framework */; };
-		17FA64821ED7688A0090F1EB /* Province.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17FA64811ED7688A0090F1EB /* Province.framework */; };
 		17FA64891ED769CF0090F1EB /* FormFieldSecurityLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FA64881ED769CF0090F1EB /* FormFieldSecurityLevel.swift */; };
 		55199D60217F931500F1F18E /* FormAnchoringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55199D5F217F931500F1F18E /* FormAnchoringView.swift */; };
-		55199D64217F989C00F1F18E /* Aweigh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55199D63217F989C00F1F18E /* Aweigh.framework */; };
 		55199D65217FA3B500F1F18E /* FormAnchoringView.swift in Headers */ = {isa = PBXBuildFile; fileRef = 55199D5F217F931500F1F18E /* FormAnchoringView.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		55199D69217FF42D00F1F18E /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55199D68217FF42D00F1F18E /* FormViewController.swift */; };
 /* End PBXBuildFile section */
@@ -36,7 +32,6 @@
 		172261531ED3A85E002B51A5 /* Formosa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Formosa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		172261561ED3A85E002B51A5 /* Formosa.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Formosa.h; sourceTree = "<group>"; };
 		172261571ED3A85E002B51A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1730638D1F42672B00FAE2FE /* Trestle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Trestle.framework; path = Carthage/Build/iOS/Trestle.framework; sourceTree = "<group>"; };
 		17C016671ED3B34C00E8CB35 /* Form.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Form.swift; sourceTree = "<group>"; };
 		17C016691ED3B37B00E8CB35 /* FormField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormField.swift; sourceTree = "<group>"; };
 		17C0166B1ED3B39700E8CB35 /* FormFieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormFieldView.swift; sourceTree = "<group>"; };
@@ -48,11 +43,8 @@
 		17C564231ED77ABB00B44B8B /* FormValidityError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormValidityError.swift; sourceTree = "<group>"; };
 		17C564251ED77D4700B44B8B /* FormFieldValidityError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormFieldValidityError.swift; sourceTree = "<group>"; };
 		17FA646D1ED6457C0090F1EB /* FormTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormTextField.swift; sourceTree = "<group>"; };
-		17FA647F1ED768800090F1EB /* Mensa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mensa.framework; path = Carthage/Build/iOS/Mensa.framework; sourceTree = "<group>"; };
-		17FA64811ED7688A0090F1EB /* Province.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Province.framework; path = Carthage/Build/iOS/Province.framework; sourceTree = "<group>"; };
 		17FA64881ED769CF0090F1EB /* FormFieldSecurityLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormFieldSecurityLevel.swift; sourceTree = "<group>"; };
 		55199D5F217F931500F1F18E /* FormAnchoringView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormAnchoringView.swift; sourceTree = "<group>"; };
-		55199D63217F989C00F1F18E /* Aweigh.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Aweigh.framework; path = Carthage/Build/iOS/Aweigh.framework; sourceTree = "<group>"; };
 		55199D68217FF42D00F1F18E /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,10 +53,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17FA64801ED768800090F1EB /* Mensa.framework in Frameworks */,
-				55199D64217F989C00F1F18E /* Aweigh.framework in Frameworks */,
-				17FA64821ED7688A0090F1EB /* Province.framework in Frameworks */,
-				1730638E1F42672B00FAE2FE /* Trestle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,7 +64,6 @@
 			children = (
 				172261551ED3A85E002B51A5 /* Formosa */,
 				172261541ED3A85E002B51A5 /* Products */,
-				17C016731ED49AE400E8CB35 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,17 +96,6 @@
 				172261571ED3A85E002B51A5 /* Info.plist */,
 			);
 			path = Formosa;
-			sourceTree = "<group>";
-		};
-		17C016731ED49AE400E8CB35 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				55199D63217F989C00F1F18E /* Aweigh.framework */,
-				1730638D1F42672B00FAE2FE /* Trestle.framework */,
-				17FA64811ED7688A0090F1EB /* Province.framework */,
-				17FA647F1ED768800090F1EB /* Mensa.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -365,7 +341,7 @@
 				INFOPLIST_FILE = Formosa/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(CONFIGURATION_BUILD_DIR)";
 				PRODUCT_BUNDLE_IDENTIFIER = co.cultivr.Formosa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -392,7 +368,7 @@
 				INFOPLIST_FILE = Formosa/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(CONFIGURATION_BUILD_DIR)";
 				PRODUCT_BUNDLE_IDENTIFIER = co.cultivr.Formosa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
