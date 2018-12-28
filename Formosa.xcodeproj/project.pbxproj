@@ -7,6 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1722578621D5DE4800A7C84B /* Tarmac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1722577C21D5DE4800A7C84B /* Tarmac.framework */; };
+		1722578721D5DE4800A7C84B /* Aweigh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1722577D21D5DE4800A7C84B /* Aweigh.framework */; };
+		1722578821D5DE4800A7C84B /* Cipher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1722577E21D5DE4800A7C84B /* Cipher.framework */; };
+		1722578921D5DE4800A7C84B /* Acracy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1722577F21D5DE4800A7C84B /* Acracy.framework */; };
+		1722578A21D5DE4800A7C84B /* SwiftTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1722578021D5DE4800A7C84B /* SwiftTask.framework */; };
+		1722578B21D5DE4800A7C84B /* Mensa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1722578121D5DE4800A7C84B /* Mensa.framework */; };
+		1722578C21D5DE4800A7C84B /* Lilt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1722578221D5DE4800A7C84B /* Lilt.framework */; };
+		1722578D21D5DE4800A7C84B /* Province.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1722578321D5DE4800A7C84B /* Province.framework */; };
+		1722578E21D5DE4800A7C84B /* Tangram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1722578421D5DE4800A7C84B /* Tangram.framework */; };
+		1722578F21D5DE4800A7C84B /* Trestle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1722578521D5DE4800A7C84B /* Trestle.framework */; };
+		1722579121D5DE6000A7C84B /* Acracy.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1722577F21D5DE4800A7C84B /* Acracy.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1722579221D5DE6000A7C84B /* Aweigh.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1722577D21D5DE4800A7C84B /* Aweigh.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1722579321D5DE6000A7C84B /* Cipher.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1722577E21D5DE4800A7C84B /* Cipher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1722579421D5DE6000A7C84B /* Lilt.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1722578221D5DE4800A7C84B /* Lilt.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1722579521D5DE6000A7C84B /* Mensa.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1722578121D5DE4800A7C84B /* Mensa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1722579621D5DE6000A7C84B /* Province.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1722578321D5DE4800A7C84B /* Province.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1722579721D5DE6000A7C84B /* SwiftTask.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1722578021D5DE4800A7C84B /* SwiftTask.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1722579821D5DE6000A7C84B /* Tangram.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1722578421D5DE4800A7C84B /* Tangram.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1722579921D5DE6000A7C84B /* Tarmac.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1722577C21D5DE4800A7C84B /* Tarmac.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1722579A21D5DE6000A7C84B /* Trestle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1722578521D5DE4800A7C84B /* Trestle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		172261581ED3A85E002B51A5 /* Formosa.h in Headers */ = {isa = PBXBuildFile; fileRef = 172261561ED3A85E002B51A5 /* Formosa.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		175F2B2620B235B300638B20 /* FormTextField.swift in Headers */ = {isa = PBXBuildFile; fileRef = 17FA646D1ED6457C0090F1EB /* FormTextField.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		17C016681ED3B34C00E8CB35 /* Form.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C016671ED3B34C00E8CB35 /* Form.swift */; };
@@ -28,7 +48,39 @@
 		55199D69217FF42D00F1F18E /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55199D68217FF42D00F1F18E /* FormViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		1722579021D5DE5400A7C84B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1722579121D5DE6000A7C84B /* Acracy.framework in CopyFiles */,
+				1722579221D5DE6000A7C84B /* Aweigh.framework in CopyFiles */,
+				1722579321D5DE6000A7C84B /* Cipher.framework in CopyFiles */,
+				1722579421D5DE6000A7C84B /* Lilt.framework in CopyFiles */,
+				1722579521D5DE6000A7C84B /* Mensa.framework in CopyFiles */,
+				1722579621D5DE6000A7C84B /* Province.framework in CopyFiles */,
+				1722579721D5DE6000A7C84B /* SwiftTask.framework in CopyFiles */,
+				1722579821D5DE6000A7C84B /* Tangram.framework in CopyFiles */,
+				1722579921D5DE6000A7C84B /* Tarmac.framework in CopyFiles */,
+				1722579A21D5DE6000A7C84B /* Trestle.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1722577C21D5DE4800A7C84B /* Tarmac.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Tarmac.framework; path = Carthage/Build/iOS/Tarmac.framework; sourceTree = "<group>"; };
+		1722577D21D5DE4800A7C84B /* Aweigh.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Aweigh.framework; path = Carthage/Build/iOS/Aweigh.framework; sourceTree = "<group>"; };
+		1722577E21D5DE4800A7C84B /* Cipher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cipher.framework; path = Carthage/Build/iOS/Cipher.framework; sourceTree = "<group>"; };
+		1722577F21D5DE4800A7C84B /* Acracy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Acracy.framework; path = Carthage/Build/iOS/Acracy.framework; sourceTree = "<group>"; };
+		1722578021D5DE4800A7C84B /* SwiftTask.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftTask.framework; path = Carthage/Build/iOS/SwiftTask.framework; sourceTree = "<group>"; };
+		1722578121D5DE4800A7C84B /* Mensa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mensa.framework; path = Carthage/Build/iOS/Mensa.framework; sourceTree = "<group>"; };
+		1722578221D5DE4800A7C84B /* Lilt.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Lilt.framework; path = Carthage/Build/iOS/Lilt.framework; sourceTree = "<group>"; };
+		1722578321D5DE4800A7C84B /* Province.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Province.framework; path = Carthage/Build/iOS/Province.framework; sourceTree = "<group>"; };
+		1722578421D5DE4800A7C84B /* Tangram.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Tangram.framework; path = Carthage/Build/iOS/Tangram.framework; sourceTree = "<group>"; };
+		1722578521D5DE4800A7C84B /* Trestle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Trestle.framework; path = Carthage/Build/iOS/Trestle.framework; sourceTree = "<group>"; };
 		172261531ED3A85E002B51A5 /* Formosa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Formosa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		172261561ED3A85E002B51A5 /* Formosa.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Formosa.h; sourceTree = "<group>"; };
 		172261571ED3A85E002B51A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,16 +105,44 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1722578621D5DE4800A7C84B /* Tarmac.framework in Frameworks */,
+				1722578721D5DE4800A7C84B /* Aweigh.framework in Frameworks */,
+				1722578821D5DE4800A7C84B /* Cipher.framework in Frameworks */,
+				1722578921D5DE4800A7C84B /* Acracy.framework in Frameworks */,
+				1722578A21D5DE4800A7C84B /* SwiftTask.framework in Frameworks */,
+				1722578B21D5DE4800A7C84B /* Mensa.framework in Frameworks */,
+				1722578C21D5DE4800A7C84B /* Lilt.framework in Frameworks */,
+				1722578D21D5DE4800A7C84B /* Province.framework in Frameworks */,
+				1722578E21D5DE4800A7C84B /* Tangram.framework in Frameworks */,
+				1722578F21D5DE4800A7C84B /* Trestle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1722577B21D5DE4800A7C84B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1722577F21D5DE4800A7C84B /* Acracy.framework */,
+				1722577D21D5DE4800A7C84B /* Aweigh.framework */,
+				1722577E21D5DE4800A7C84B /* Cipher.framework */,
+				1722578221D5DE4800A7C84B /* Lilt.framework */,
+				1722578121D5DE4800A7C84B /* Mensa.framework */,
+				1722578321D5DE4800A7C84B /* Province.framework */,
+				1722578021D5DE4800A7C84B /* SwiftTask.framework */,
+				1722578421D5DE4800A7C84B /* Tangram.framework */,
+				1722577C21D5DE4800A7C84B /* Tarmac.framework */,
+				1722578521D5DE4800A7C84B /* Trestle.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		172261491ED3A85E002B51A5 = {
 			isa = PBXGroup;
 			children = (
 				172261551ED3A85E002B51A5 /* Formosa */,
+				1722577B21D5DE4800A7C84B /* Frameworks */,
 				172261541ED3A85E002B51A5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -124,6 +204,7 @@
 				1722614F1ED3A85E002B51A5 /* Frameworks */,
 				172261501ED3A85E002B51A5 /* Headers */,
 				172261511ED3A85E002B51A5 /* Resources */,
+				1722579021D5DE5400A7C84B /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -334,6 +415,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -361,6 +443,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
