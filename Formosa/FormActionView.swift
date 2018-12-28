@@ -18,7 +18,7 @@ public final class FormActionView: Block {
     @IBInspectable private(set) var buttonText: String?
 
     // MARK: Block
-    override open func finishSetup() {
+    override public func finishSetup() {
         guard let text = buttonText else { return }
         button.text = text
     }
