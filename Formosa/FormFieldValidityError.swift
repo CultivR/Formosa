@@ -10,5 +10,4 @@ public enum FormFieldValidityError: Error {
     case blank
     case invalid
     case unchanged
-    case unmatched
 }

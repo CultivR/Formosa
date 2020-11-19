@@ -6,6 +6,9 @@
 //  Copyright © 2017 Cultivr. All rights reserved.
 //
 
+import Mensa
+import SwiftTask
+
 public protocol Form: DataSource {
     associatedtype Resource
     associatedtype SubmitProgress
@@ -19,39 +22,19 @@ public protocol Form: DataSource {
     var input: [FormFieldType: String] { get set }
     var representedResource: Resource? { get }
     
-    static var initiallyFocusedFormField: FormFieldType? { get }
-    static var isErrorReported: Bool { get }
-    
     func submit() -> SubmitTask
     func checkValidity() -> CheckValidityTask
+    func cancelSubmission()
 }
 
 public extension Form {
-    static var initiallyFocusedFormField: FormFieldType? {
-        return nil
-    }
-    
-    static var isErrorReported: Bool {
-        return true
-    }
-    
-    func hasMatchingInput(across formFields: [FormFieldType]) -> Bool {
-        var string: String? = nil
-        for formField in formFields {
-            if string != nil && string != self[formField] {
-                return false
-            }
-            string = self[formField]
-        }
-        return true
-    }
-    
-    subscript(formField: FormFieldType) -> String? {
-        get {
-            return input[formField] ?? formField.existingInput
-        }
-        set {
-            input[formField] = newValue
+    mutating func update(_ formField: FormFieldType, withText text: String?) {
+        if let text = text, text.count > 0 {
+            input[formField] = text
+        } else {
+            input[formField] = nil
         }
     }
+    
+    func cancelSubmission() {}
 }

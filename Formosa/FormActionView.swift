@@ -6,26 +6,16 @@
 //  Copyright © 2017 Cultivr. All rights reserved.
 //
 
-public final class FormActionView: Block {
-    var isEnabled: Bool = true {
-        didSet {
-            button.isEnabled = isEnabled
-        }
-    }
-    
-    @IBOutlet public private(set) var button: Button!
-    
-    @IBInspectable private(set) var buttonText: String?
+import Mensa
+import Trestle
 
-    // MARK: Block
-    override public func finishSetup() {
-        guard let text = buttonText else { return }
-        button.text = text
-    }
+public final class FormActionView: UIView {
+    @IBOutlet public private(set) var button: Button!
 }
 
 extension FormActionView: Displayed {
     public func update(with action: FormAction, variant: DisplayInvariant) {
         button.text = action.name
+        button.setTitle(action.name, for: .normal)
     }
 }
